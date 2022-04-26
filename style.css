@@ -1,0 +1,1161 @@
+/*Selector universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*importo fuente*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+/* CSS genéricos */
+
+html {
+    font-size: 62.5%;
+}
+
+/* ---------------------------------------------Display GRID  */
+.grid-body {
+    display: grid;
+    grid-template-rows: repeat(4, auto-fit);
+    grid-template-columns: auto;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.button--short {
+    margin-top: 1rem;
+}
+
+.button-line {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: white;
+    border: solid 0.3rem white;
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    /* margin-left: 2rem; */
+    text-align: center;
+
+}
+
+.button-line:hover {
+    background-color: #f4a261;
+    color: black;
+    border: none;
+}
+
+.button:hover {
+    background-color: #2a9d8f;
+}
+
+.texto-izq {
+    width: 60%;
+    padding: 3rem 5rem;
+    min-width: 350px;
+}
+
+.texto-centro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.texto-der {
+    width: 60%;
+    padding: 3rem 5rem;
+    float: right;
+    min-width: 350px;
+}
+
+.seccion-p {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 150;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.seccion-p span {
+    font-weight: bold;
+}
+
+.seccion-h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #264653;
+    padding-bottom: 2rem;
+}
+
+.seccion-h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #264653;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 0;
+    width: 25rem;
+    height: auto;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.buscador {
+    display: flex;
+    align-content: center;
+    background-color: white;
+    border: 0;
+    border-radius: 20rem;
+    width: 60rem;
+    height: 4rem;
+}
+
+.lupa {
+    width: auto;
+    height: 3rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.buscar {
+    border: none;
+    width: 90%;
+    height: auto;
+    outline: none;
+    padding-left: 1rem;
+}
+
+
+/*---------------- CSS header----------*/
+header {
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.header--index {
+    background-color: #f6fbfe;
+}
+
+.barra-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-ul li a {
+    padding-right: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-ul li a:hover {
+    font-weight: 900;
+}
+
+.links-nav {
+    display: flex
+}
+
+.header-logo {
+    width: 19rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.login {
+    font-size: 1.8rem;
+    width: 20rem;
+    margin: 1rem 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.login:hover {
+    background-color: #264653;
+    border-radius: 5%;
+}
+
+.login a:hover {
+    color: white;
+}
+
+/*---------- MAIN ----------*/
+/* CSS primer seccion "top"*/
+.top {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.texto-hero {
+    width: 60%;
+    float: left;
+    padding: 3rem 5rem;
+    min-width: 350px;
+}
+
+.top--resto {
+    flex-flow: column wrap;
+}
+
+.top--tienda {
+    height: 40rem;
+    width: 100%;
+}
+
+.hero-img {
+    background-image: url('img/asomando.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-top: 10rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-img--contacto {
+    background-image: none;
+    background-color: #2a9d8f;
+    height: 50vh;
+    padding-top: 8rem;
+    width: 100%;
+    overflow: hidden;
+    border: 0;
+    border-radius: 100% 0% 68% 32% / 0% 32% 68% 100%;
+    z-index: 0;
+}
+
+.hero-img--empresas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url('img/risa-pasto.jpg');
+    background-position: top;
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    border: 0;
+    border-radius: 100% 0% 68% 32% / 0% 32% 68% 100%;
+
+}
+
+.hero-img--petshop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url('img/ventana-auto.jpg');
+    background-position: bottom;
+    object-fit: cover;
+    height: 70vh;
+}
+
+.hero-img--tienda {
+    background-image: none;
+    background-color: #2a9d8f;
+    height: 50vh;
+    padding-top: 8rem;
+    width: 100%;
+    overflow: hidden;
+    border: 0;
+    border-radius: 100% 0% 68% 32% / 0% 32% 68% 100%;
+    z-index: 0;
+}
+
+.hero-img--porque {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url('img/tego-ball.png');
+    background-position: top;
+    height: 80vh;
+}
+
+.top-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+    color: darkslategrey;
+    margin-bottom: 1rem;
+}
+
+.top-h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.top-h2--blue {
+    color: #264653;
+}
+
+.top-p {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 150;
+    line-height: 2;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 60%;
+}
+
+.top-p--white {
+    color: white;
+}
+
+.texto-solo {
+    width: 100%;
+    height: 60rem;
+    background-size: cover;
+}
+
+.texto-solo p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.contenido {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    top: -7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.datos-extra {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    padding: 2rem;
+    width: 80%;
+    height: auto;
+    background-color: rgba(241, 238, 238, 0.842);
+    border: 0;
+    border-radius: 1rem;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
+
+}
+
+.line {
+    width: 0.5rem;
+    height: 100%;
+    margin: 1rem 3rem;
+    background-color: #264653;
+}
+
+.datos-extra>div {
+    align-self: center;
+    max-width: 50%;
+}
+
+.datos-extra label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.datos-extra input {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+}
+
+.datos-extra select {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-size: 2rem;
+    border: 0;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+}
+
+.datos-extra .campo-largo {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    min-height: 18rem;
+    position: relative;
+}
+
+.main-color {
+    background-color: #dcf0ed;
+
+}
+
+/* CSS segunda seccion "verde"*/
+
+.seccion-verde {
+    width: 100%;
+    height: auto;
+    background-color: #2a9d8f;
+    background-size: cover;
+    color: white;
+    line-height: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.seccion-verde h2 {
+    color: white;
+}
+
+.ima-verde {
+    width: 35%;
+    height: auto;
+
+}
+
+#verde:hover {
+    background-color: #f4a261;
+}
+
+.seccion-normal {
+    padding: 5rem 0;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.seccion-normal div {
+    width: 40%;
+}
+
+.seccion-normal select {
+    margin-bottom: 2rem;
+    width: 40%;
+    font-size: 2rem;
+    border: 0;
+    padding: 0.5rem 0;
+}
+
+.seccion-normal article {
+    display: inline-block;
+    text-align: justify;
+    width: 80%;
+    word-break: break-all;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.seccion-normal article iframe {
+    float: right;
+}
+
+/* CSS tercer seccion "slide categorias"*/
+
+.slide-categorias {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background-color: white;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tienda {
+    display: flex;
+    justify-content: center;
+}
+
+.productos-tienda {
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    grid-auto-rows: 35rem;
+    gap: 6rem;
+    justify-content: space-around;
+    z-index: 1;
+    margin-bottom: 6rem;
+    transition: all ease 0.3s;
+
+}
+
+.slide-categorias span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+
+}
+
+.cont-cat {
+    min-block-size: 300px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 5rem;
+    padding: 2rem;
+    margin: 1rem 4rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.categorias a {
+    text-decoration: none;
+}
+
+.cont-cat--carbon {
+    background-color: #264653;
+}
+
+.cont-cat--green {
+    background-color: #2a9d8f;
+}
+
+.cont-cat--crayola {
+    background-color: #f4a261;
+}
+
+.img-cat {
+    width: 35rem;
+    height: auto;
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+}
+
+
+.img-cat:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(10px 8px 0.75rem rgba(27, 27, 27, 0.616));
+}
+
+.cont-producto {
+    background-color: white;
+    border: 0;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.568);
+    -webkit-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.568);
+    -moz-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.568);
+}
+
+.fav-icon {
+    width: 2.5rem;
+    height: auto;
+    position: absolute;
+    margin: 3rem;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.img-prod {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    padding-top: 2rem;
+
+}
+
+.fav-icon:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.descripcion {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    margin: 1rem;
+    padding: 3rem 2rem 0.5rem 2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    grid-column-start: span 2;
+}
+
+.detalle {
+    color: rgb(102, 102, 102);
+    grid-column-start: span 2;
+    font-size: 1.2rem;
+}
+
+.precio {
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-column-start: span 2;
+}
+
+.icon {
+    width: 40%;
+    height: auto;
+    padding-bottom: 2rem;
+    grid-row-start: span 3;
+    justify-self: right;
+    align-self: top;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.map {
+    width: 600px;
+    height: 450px;
+}
+
+/* CSS cuarta seccion "naranja"*/
+.seccion-naranja {
+    background-color: #f4a261;
+    width: 100%;
+    background-size: cover;
+    height: auto;
+    color: white;
+    padding-right: 2px;
+    margin-bottom: 0;
+    word-break: break-all;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.video {
+    width: 40%;
+    min-height: 600px;
+    height: auto;
+}
+
+/* CSS quinta seccion "reviews"*/
+
+.lista-reviews {
+    width: 100%;
+    text-align: center;
+    padding-top: 10rem;
+    background-color: white;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.review {
+    margin: 5rem;
+    max-width: 40%;
+}
+
+.cont-img-reviews {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*---------- FOOTER ----------*/
+
+
+.footer {
+    background-color: #264653;
+    color: white;
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.footer a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.news-footer {
+    margin: 1rem 0 1rem 0.5rem;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-footer p {
+    line-height: normal;
+}
+
+.news-footer input {
+    border: 0;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.links-footer {
+    min-width: 25%;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: space-around;
+}
+
+.links-footer a {
+    padding: 2rem 0;
+    cursor: pointer;
+}
+
+.links-footer a:hover {
+    color: #122127;
+}
+
+.rrhh {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.rrhh a:hover {
+    color: #122127;
+}
+
+.links-footer .rrhh p {
+    margin-top: 1rem;
+    line-height: normal;
+}
+
+.sociales {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.sociales a {
+    padding-right: 0.1rem;
+}
+
+.copy {
+    background-color: black;
+    width: 100%;
+    color: rgb(194, 194, 194);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+@media only screen and (max-width:450px) {
+    html {
+        font-size: 40%;
+    }
+    .barra-nav{
+        margin-left: 4rem;
+    }
+
+    .links-nav {
+        display: none;
+    }
+
+
+    .hero-img--contacto {
+        display: block;
+        height: 30vh;
+    }
+
+    .hero-img--empresas {
+        display: block;
+        height: 30vh;
+    }
+
+    .hero-img--tienda {
+        height: 30vh;
+
+    }
+
+    .hero-img--petshop {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .texto-hero {
+        width: 100%;
+        padding: 3rem 3rem;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .top-p {
+        line-height: normal;
+        text-align: justify;
+        margin: auto;
+    }
+
+    .datos-extra {
+        margin: 0.5rem;
+        flex-direction: column;
+    }
+
+    .datos-extra>div {
+        max-width: 90%;
+    }
+
+    .contenido {
+        top: -5rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .datos {
+        display: flex;
+    }
+
+    .mail {
+        margin-left: 1rem;
+    }
+
+    .datos-extra .campo-largo {
+        margin-bottom: 1.5rem;
+        min-height: 10rem;
+    }
+
+    .texto-izq {
+        width: 80%;
+        padding: 3rem 3rem;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .seccion-verde {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        align-content: center;
+        justify-content: center;
+    }
+
+    .buscador {
+        width: 60%;
+    }
+
+    .buscar {
+        width: 50%;
+    }
+
+    .productos-tienda {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 60%);
+        grid-auto-rows: 50rem;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    h6{
+        font-size: 2rem;
+    }
+
+    .detalle{
+        font-size: 2rem;
+    }
+
+    .precio{
+        font-size: 2rem;
+    }
+    .img-prod {
+        padding-bottom: 1rem;
+    }
+
+
+    .descripcion {
+        padding-top: 1rem;
+    }
+
+    .ima-verde {
+        width: 451px;
+        justify-self: center;
+    }
+
+    .video {
+        width: 100%;
+        min-height: 40vh;
+    }
+
+    .map {
+        width: 451px;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .seccion-normal div {
+        width: 60%;
+    }
+
+    .texto-der {
+        width: auto;
+    }
+
+    .footer {
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        align-content: space-around; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .news-footer{
+        margin: auto;
+    }
+
+    .links-footer{
+        justify-content: center;
+        margin: auto;
+        font-size: 5rem;
+    }
+    .links-footer a {
+        padding: 2rem;
+    }
+
+}
+
+@media only screen and (min-width:451px) and (max-width:715px) {
+    .links-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:451px) and (max-width:960px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .nav-ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto;
+    }
+
+
+    .hero-img--contacto {
+        display: block;
+        height: 40vh;
+    }
+
+    .hero-img--empresas {
+        display: block;
+        height: 40vh;
+    }
+
+    .hero-img--tienda {
+        height: 40vh;
+
+    }
+
+    .hero-img--petshop {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .texto-hero {
+        width: 100%;
+        padding: 3rem 3rem;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .top-p {
+        line-height: normal;
+        text-align: justify;
+        margin: auto;
+    }
+
+    .datos-extra {
+        margin: 0.5rem;
+        flex-direction: column;
+    }
+
+    .datos-extra>div {
+        max-width: 90%;
+    }
+
+    .contenido {
+        top: -5rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .datos {
+        display: flex;
+    }
+
+    .mail {
+        margin-left: 1rem;
+    }
+
+    .datos-extra .campo-largo {
+        margin-bottom: 1.5rem;
+        min-height: 10rem;
+    }
+
+    .texto-izq {
+        width: 80%;
+        padding: 3rem 3rem;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .seccion-verde {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        align-content: center;
+        justify-content: center;
+    }
+
+    .buscador {
+        width: 60%;
+    }
+
+    .buscar {
+        width: 50%;
+    }
+
+    .productos-tienda {
+        display: grid;
+        grid-template-columns: repeat(2, 23rem);
+        grid-auto-rows: 28rem;
+        gap: 3rem;
+        margin: 0 1rem 5rem 1rem;
+    }
+
+    .img-prod {
+        padding-bottom: 1rem;
+    }
+
+
+    .descripcion {
+        padding-top: 1rem;
+    }
+
+    .ima-verde {
+        width: 451px;
+        justify-self: center;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .map {
+        width: 451px;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .seccion-normal div {
+        width: 60%;
+    }
+
+    .texto-der {
+        width: auto;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        align-content: space-around;
+    }
+
+}
