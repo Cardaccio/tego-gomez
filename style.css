@@ -15,13 +15,6 @@ html {
     font-size: 62.5%;
 }
 
-/* ---------------------------------------------Display GRID  */
-.grid-body {
-    display: grid;
-    grid-template-rows: repeat(4, auto-fit);
-    grid-template-columns: auto;
-}
-
 .button {
     background-color: black;
     color: white;
@@ -32,7 +25,7 @@ html {
     display: inline-block;
     font-size: 2rem;
     border-radius: 1rem;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     margin-right: 2rem;
     cursor: pointer;
 }
@@ -164,12 +157,6 @@ header {
     background-color: #f6fbfe;
 }
 
-.barra-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .nav-ul {
     text-transform: uppercase;
     /* display: flex;
@@ -209,7 +196,7 @@ header {
 
 .login {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem !important; 
+    font-size: 1.8rem !important;
     text-align: center;
     text-decoration: none;
     color: black;
@@ -451,6 +438,12 @@ header {
     width: 35%;
     height: auto;
 
+}
+
+.cont-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #verde:hover {
@@ -824,16 +817,17 @@ h6 {
     box-shadow: 0.5rem 0.5rem 2rem #122127, -0.5rem -0.5rem 2rem #44778b;
 }
 
-.sociales a:hover{
+.sociales a:hover {
     animation: shadow 0.5s ease-in-out;
 }
 
-@keyframes shadow{
-    0%{ 
-        box-shadow: inset 0.5rem 0.5rem 2rem #122127, inset -0.5rem -0.5rem 2rem #44778b;;
+@keyframes shadow {
+    0% {
+        box-shadow: inset 0.5rem 0.5rem 2rem #122127, inset -0.5rem -0.5rem 2rem #44778b;
+        ;
     }
 
-    100%{
+    100% {
         box-shadow: none;
     }
 }
@@ -853,7 +847,15 @@ h6 {
         font-size: 40%;
     }
 
-   .hero-img--contacto {
+    body {
+        width: 100%;
+    }
+
+    .nav--index {
+        padding-right: 3rem;
+    }
+
+    .hero-img--contacto {
         display: block;
         height: 30vh;
     }
@@ -925,9 +927,8 @@ h6 {
     }
 
     .seccion-verde {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, auto);
+        display: flex;
+        flex-direction: column;
         align-content: center;
         justify-content: center;
     }
@@ -972,7 +973,7 @@ h6 {
 
     .ima-verde {
         width: 451px;
-        justify-self: center;
+        /* justify-self: center; */
     }
 
     .video {
@@ -1027,12 +1028,25 @@ h6 {
         display: flex;
         flex-direction: column;
     }
+
+    .button {
+        margin-bottom: 3rem;
+    }
+
+    .cont-button {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
 
 @media only screen and (min-width:451px) and (max-width:960px) {
 
     html {
         font-size: 55%;
+    }
+
+    .nav--index {
+        padding-right: 4rem;
     }
 
 
