@@ -159,11 +159,6 @@ header {
 
 .nav-ul {
     text-transform: uppercase;
-    /* display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-items: center;
-    text-align: center; */
 }
 
 .nav-ul a {
@@ -733,8 +728,6 @@ h6 {
 
 .news-footer {
     margin: 1rem 0 1rem 0.5rem;
-    /* margin-top: 1rem;
-    margin-bottom: 1rem; */
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -969,7 +962,6 @@ h6 {
 
     .ima-verde {
         width: 451px;
-        /* justify-self: center; */
     }
 
     .video {
@@ -992,10 +984,6 @@ h6 {
     }
 
     .footer {
-        /* display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-        align-content: space-around; */
         display: flex;
         flex-direction: column;
         justify-content: center;
