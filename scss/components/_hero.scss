@@ -1,0 +1,129 @@
+@import '../base/variables';
+
+/* hero */
+.top {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+    &--resto {
+        flex-flow: column wrap;
+    }
+
+    &--tienda {
+        height: 40rem;
+        width: 100%;
+    }
+
+    .hero-img {
+        background-image: url('../img/asomando.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+        padding-top: 10rem;
+        overflow: hidden;
+        position: relative;
+
+        &--contacto {
+            background-image: none;
+            background-color: $color-primario;
+            height: 50vh;
+            padding-top: 8rem;
+            width: 100%;
+            overflow: hidden;
+            border: 0;
+            border-radius: 100% 0% 68% 32% / 0% 32% 68% 100%;
+            z-index: 0;
+        }
+
+        &--empresas {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url('../img/risa-pasto.jpg');
+            background-position: top;
+            display: flex;
+            flex-direction: row;
+            height: 60vh;
+            border: 0;
+            border-radius: 100% 0% 68% 32% / 0% 32% 68% 100%;
+
+        }
+
+        &--petshop {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url('../img/ventana-auto.jpg');
+            background-position: bottom;
+            object-fit: cover;
+            height: 70vh;
+        }
+
+        &--tienda {
+            background-image: none;
+            background-color: #2a9d8f;
+            height: 50vh;
+            padding-top: 8rem;
+            width: 100%;
+            overflow: hidden;
+            border: 0;
+            border-radius: 100% 0% 68% 32% / 0% 32% 68% 100%;
+            z-index: 0;
+        }
+
+        &--porque {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url('../img/tego-ball.png');
+            background-position: top;
+            height: 80vh;
+        }
+
+        .texto-hero {
+            width: 60%;
+            float: left;
+            padding: 3rem 5rem;
+            min-width: 350px;
+
+            .top-h1 {
+                font-family: $font-primaria;
+                font-size: 7rem;
+                font-weight: 700;
+                color: $color-dark;
+                margin-bottom: 1rem;
+            }
+
+            .top-h2 {
+                font-family: $font-primaria;
+                font-size: 6rem;
+                font-weight: 700;
+                color: white;
+                margin-bottom: 1rem;
+            }
+
+            .top-p {
+                font-size: 2rem;
+                font-family: $font-primaria;
+                font-weight: 400;
+                line-height: 2;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                max-width: 60%;
+
+                &--white {
+                    color: white;
+                }
+            }
+
+            .texto-solo {
+                width: 100%;
+                height: 60rem;
+                background-size: cover;
+
+                p {
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+}

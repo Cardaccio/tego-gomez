@@ -1,0 +1,120 @@
+@import '../base/variables';
+
+/*Selector universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*importo fuente*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+/* Fuente a 10px */
+
+html {
+    font-size: 62.5%;
+}
+
+/* Botones */
+
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-primario;
+    }
+}
+
+.button--short {
+    margin-top: 1rem;
+}
+
+.button-line {
+    font-family: $font-primaria;
+    color: white;
+    border: solid 0.3rem white;
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+    &:hover{
+        background-color: $color-secundario;
+        color: black;
+        border: none;
+    }
+}
+
+input {
+    border: 0;
+    width: 25rem;
+    height: auto;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.buscador {
+    display: flex;
+    align-content: center;
+    background-color: white;
+    border: 0;
+    border-radius: 20rem;
+    width: 60rem;
+    height: 4rem;
+}
+
+.lupa {
+    width: auto;
+    height: 3rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.buscar {
+    border: none;
+    width: 90%;
+    height: auto;
+    outline: none;
+    padding-left: 1rem;
+}
+
+/* textos generales */
+
+.seccion-p {
+    font-size: 2rem;
+    font-family: $font-primaria;
+    font-weight: 150;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    & span{
+        font-weight: bold;
+    }
+}
+
+.seccion-h2 {
+    font-family: $font-primaria;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-dark;
+    padding-bottom: 2rem;
+}
+
+.seccion-h4 {
+    font-family: $font-primaria;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-dark;
+    margin-bottom: 10px;
+}
