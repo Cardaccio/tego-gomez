@@ -11,6 +11,12 @@ header {
 
     .nav--index {
         background-color: #f6fbfe;
+        @include laptop{
+            padding-right: 4rem;
+        }
+        @include mobile{
+            padding-right: 3rem;
+        }
     }
 
     nav {

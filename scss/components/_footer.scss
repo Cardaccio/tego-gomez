@@ -1,6 +1,8 @@
 /* footer */
 @import '../base/variables';
-footer{
+@import '../base/breakpoints';
+
+footer {
     background-color: $color-dark;
     color: white;
     width: 100%;
@@ -10,68 +12,121 @@ footer{
     display: flex;
     justify-content: space-around;
     align-content: center;
-    a{
+
+    @include laptop {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        align-content: space-around;
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    a {
         font-family: $font-primaria;
         font-size: 2rem;
         text-decoration: none;
         color: rgb(255, 255, 255);
         cursor: pointer;
     }
-    .news-footer{
+
+    .news-footer {
         margin: 1rem 0 1rem 0.5rem;
         padding: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        p{
+
+        @include mobile {
+            margin: auto;
+        }
+
+        p {
             line-height: normal;
         }
-        input{
+
+        input {
             border: 0;
             width: 100%;
             border-radius: 0.5rem;
         }
     }
-    .links-footer{
+
+    .links-footer {
         min-width: 25%;
         margin-top: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        justify-items: space-around;
+        align-content: center;
+        justify-content: space-around;
 
-        a{
+        @include mobile {
+            justify-content: center;
+            margin: auto;
+            font-size: 5rem;
+        }
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include laptop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        a {
+            justify-self: center;
             padding: 2rem 0;
             cursor: pointer;
-            &:hover{
+
+            @include mobile {
+                padding: 2rem;
+            }
+
+            &:hover {
                 color: #122127;
             }
         }
     }
-    .rrhh{
+
+    .rrhh {
         margin-top: 1rem;
         padding: 1rem 2rem;
         text-align: center;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        a:hover{
+        justify-content: center;
+
+        a:hover {
             color: #122127;
         }
-        p{
+
+        p {
             margin-top: 1rem;
             line-height: normal;
         }
     }
-    .sociales{
+
+    .sociales {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
         margin-top: 1rem;
         margin-right: 1rem;
-        a{
+        @include mobile{
+            margin-bottom: 2rem;
+        }
+
+        a {
             background-color: $color-dark;
             width: 3rem;
             height: 3rem;
@@ -84,27 +139,31 @@ footer{
             border: 0;
             border-radius: 50%;
             box-shadow: 0.5rem 0.5rem 2rem #122127, -0.5rem -0.5rem 2rem #44778b;
-            &:hover{
+
+            &:hover {
                 animation: shadow 0.5s ease-in-out;
             }
+
             @keyframes shadow {
                 0% {
                     box-shadow: inset 0.5rem 0.5rem 2rem #122127, inset -0.5rem -0.5rem 2rem #44778b;
                     ;
                 }
-            
+
                 100% {
                     box-shadow: none;
                 }
             }
         }
-        .redes{
+
+        .redes {
             display: flex;
         }
     }
 
 }
-.copy{
+
+.copy {
     background-color: black;
     width: 100%;
     color: $color-grey;

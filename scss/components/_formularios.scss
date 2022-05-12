@@ -1,13 +1,26 @@
 /* formulario general*/
 @import '../base/variables';
+@import '../base/breakpoints';
 
 .contenido {
-    max-width: 80%;
+    // max-width: 80%;
     margin: auto;
     position: relative;
     top: -7rem;
     display: flex;
     justify-content: center;
+    @include mobile{
+        top: -5rem;
+        max-width: 90%;
+    }
+    @include tablet{
+        top: -5rem;
+        max-width: 80%;
+    }
+    @include large{
+        max-width: 80%;
+    }
+
 
     .datos-extra {
         display: flex;
@@ -24,6 +37,16 @@
         box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
+        @include tablet{
+            width: 100%;
+            margin: 0.5rem;
+            flex-direction: column;
+        }
+        @include mobile{
+            width: 100%;
+            margin: 0.5rem;
+            flex-direction: column;
+        }
 
         label {
             font-family: $font-primaria;
@@ -54,11 +77,21 @@
             width: 100%;
             min-height: 18rem;
             position: relative;
+            @include tablet{
+                margin-bottom: 1.5rem;
+                min-height: 10rem;
+            }
         }
 
         .texto-form {
             align-self: center;
             max-width: 40%;
+            @include tablet{
+                max-width: 90%;
+            }
+            @include mobile{
+                max-width: 90%;
+            }
         }
 
         .line {
@@ -66,9 +99,15 @@
             height: 100%;
             margin: 1rem 3rem;
             background-color: $color-dark;
+            @include tablet{
+                display: none;
+            }
         }
 
         .datos {
+            @include tablet{
+                display: flex;
+            }
 
             label {
                 font-family: $font-primaria;

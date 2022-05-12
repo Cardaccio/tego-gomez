@@ -1,3 +1,4 @@
+/* breakpoints responsive */
 /*Selector universal*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
 * {
@@ -10,6 +11,16 @@
 /* Fuente a 10px */
 html {
   font-size: 62.5%;
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 /* Botones */
@@ -25,6 +36,11 @@ html {
   border-radius: 1rem;
   margin-right: 2rem;
   cursor: pointer;
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .button {
+    margin-bottom: 3rem;
+  }
 }
 .button:hover {
   background-color: #2a9d8f;
@@ -112,6 +128,12 @@ input {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 /* header */
 header {
   width: 100%;
@@ -123,6 +145,16 @@ header {
 }
 header .nav--index {
   background-color: #f6fbfe;
+}
+@media screen and (min-width: 992px) {
+  header .nav--index {
+    padding-right: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .nav--index {
+    padding-right: 3rem;
+  }
 }
 header nav .container-fluid .header-logo {
   width: 19rem;
@@ -200,6 +232,18 @@ header nav .container-fluid div .login-cont .login:hover {
   border-radius: 100% 0% 68% 32%/0% 32% 68% 100%;
   z-index: 0;
 }
+@media screen and (max-width: 480px) {
+  .top .hero-img--contacto {
+    display: block;
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top .hero-img--contacto {
+    display: block;
+    height: 40vh;
+  }
+}
 .top .hero-img--empresas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url("../img/risa-pasto.jpg");
   background-position: top;
@@ -209,11 +253,35 @@ header nav .container-fluid div .login-cont .login:hover {
   border: 0;
   border-radius: 100% 0% 68% 32%/0% 32% 68% 100%;
 }
+@media screen and (max-width: 480px) {
+  .top .hero-img--empresas {
+    display: block;
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top .hero-img--empresas {
+    display: block;
+    height: 40vh;
+  }
+}
 .top .hero-img--petshop {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url("../img/ventana-auto.jpg");
   background-position: bottom;
   object-fit: cover;
   height: 70vh;
+}
+@media screen and (max-width: 480px) {
+  .top .hero-img--petshop {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top .hero-img--petshop {
+    display: flex;
+    justify-content: center;
+  }
 }
 .top .hero-img--tienda {
   background-image: none;
@@ -226,6 +294,16 @@ header nav .container-fluid div .login-cont .login:hover {
   border-radius: 100% 0% 68% 32%/0% 32% 68% 100%;
   z-index: 0;
 }
+@media screen and (max-width: 480px) {
+  .top .hero-img--tienda {
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top .hero-img--tienda {
+    height: 40vh;
+  }
+}
 .top .hero-img--porque {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.425)), url("../img/tego-ball.png");
   background-position: top;
@@ -236,6 +314,22 @@ header nav .container-fluid div .login-cont .login:hover {
   float: left;
   padding: 3rem 5rem;
   min-width: 350px;
+}
+@media screen and (max-width: 480px) {
+  .top .hero-img .texto-hero {
+    width: 100%;
+    padding: 3rem 3rem;
+    text-align: center;
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top .hero-img .texto-hero {
+    width: 100%;
+    padding: 3rem 3rem;
+    text-align: center;
+    justify-self: center;
+  }
 }
 .top .hero-img .texto-hero .top-h1 {
   font-family: "Poppins", sans-serif;
@@ -260,6 +354,20 @@ header nav .container-fluid div .login-cont .login:hover {
   margin-bottom: 2rem;
   max-width: 60%;
 }
+@media screen and (max-width: 480px) {
+  .top .hero-img .texto-hero .top-p {
+    line-height: normal;
+    text-align: justify;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top .hero-img .texto-hero .top-p {
+    line-height: normal;
+    text-align: justify;
+    margin: auto;
+  }
+}
 .top .hero-img .texto-hero .top-p--white {
   color: white;
 }
@@ -273,15 +381,86 @@ header nav .container-fluid div .login-cont .login:hover {
   line-height: 1.5rem;
   text-align: center;
 }
+.top .hero-img .texto-centro {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  margin: auto;
+}
+.top .hero-img .texto-centro .top-h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .top .hero-img .texto-centro .top-h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .top .hero-img .texto-centro .top-h2 {
+    font-size: 3rem;
+  }
+}
+.top .hero-img .texto-centro .top-p {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+@media screen and (max-width: 480px) {
+  .top .hero-img .texto-centro .top-p {
+    line-height: normal;
+    text-align: justify;
+    margin: auto;
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top .hero-img .texto-centro .top-p {
+    line-height: normal;
+    text-align: justify;
+    margin: auto;
+  }
+}
+.top .hero-img .texto-centro .top-p--white {
+  color: white;
+}
 
 /* formulario general*/
+/* breakpoints responsive */
 .contenido {
-  max-width: 80%;
   margin: auto;
   position: relative;
   top: -7rem;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .contenido {
+    top: -5rem;
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .contenido {
+    top: -5rem;
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contenido {
+    max-width: 80%;
+  }
 }
 .contenido .datos-extra {
   display: flex;
@@ -298,6 +477,20 @@ header nav .container-fluid div .login-cont .login:hover {
   box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .contenido .datos-extra {
+    width: 100%;
+    margin: 0.5rem;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenido .datos-extra {
+    width: 100%;
+    margin: 0.5rem;
+    flex-direction: column;
+  }
 }
 .contenido .datos-extra label {
   font-family: "Poppins", sans-serif;
@@ -326,15 +519,41 @@ header nav .container-fluid div .login-cont .login:hover {
   min-height: 18rem;
   position: relative;
 }
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .contenido .datos-extra .campo-largo {
+    margin-bottom: 1.5rem;
+    min-height: 10rem;
+  }
+}
 .contenido .datos-extra .texto-form {
   align-self: center;
   max-width: 40%;
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .contenido .datos-extra .texto-form {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenido .datos-extra .texto-form {
+    max-width: 90%;
+  }
 }
 .contenido .datos-extra .line {
   width: 0.3rem;
   height: 100%;
   margin: 1rem 3rem;
   background-color: #264653;
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .contenido .datos-extra .line {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .contenido .datos-extra .datos {
+    display: flex;
+  }
 }
 .contenido .datos-extra .datos label {
   font-family: "Poppins", sans-serif;
@@ -351,6 +570,7 @@ header nav .container-fluid div .login-cont .login:hover {
 }
 
 /* footer */
+/* breakpoints responsive */
 footer {
   background-color: #264653;
   color: white;
@@ -361,6 +581,22 @@ footer {
   display: flex;
   justify-content: space-around;
   align-content: center;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-content: space-around;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 }
 footer a {
   font-family: "Poppins", sans-serif;
@@ -376,6 +612,11 @@ footer .news-footer {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  footer .news-footer {
+    margin: auto;
+  }
+}
 footer .news-footer p {
   line-height: normal;
 }
@@ -387,15 +628,39 @@ footer .news-footer input {
 footer .links-footer {
   min-width: 25%;
   margin-top: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-items: space-around;
+  align-content: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  footer .links-footer {
+    justify-content: center;
+    margin: auto;
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  footer .links-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .links-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 footer .links-footer a {
+  justify-self: center;
   padding: 2rem 0;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  footer .links-footer a {
+    padding: 2rem;
+  }
 }
 footer .links-footer a:hover {
   color: #122127;
@@ -407,6 +672,7 @@ footer .rrhh {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  justify-content: center;
 }
 footer .rrhh a:hover {
   color: #122127;
@@ -422,6 +688,11 @@ footer .sociales {
   justify-content: center;
   margin-top: 1rem;
   margin-right: 1rem;
+}
+@media screen and (max-width: 480px) {
+  footer .sociales {
+    margin-bottom: 2rem;
+  }
 }
 footer .sociales a {
   background-color: #264653;
@@ -461,5 +732,7 @@ footer .sociales .redes {
   font-weight: lighter;
   text-align: center;
 }
+
+/* breakpoints responsive */
 
 /*# sourceMappingURL=style.css.map */
