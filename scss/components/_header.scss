@@ -1,5 +1,6 @@
 /* header */
 @import '../base/variables';
+@import '../base/extends';
 
 header {
     width: 100%;
@@ -49,9 +50,7 @@ header {
                 .login-cont {
                     width: 20rem;
                     margin: 1rem 1rem 1rem 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @extend %flex;
 
                     .login {
                         font-family: $font-primaria;

@@ -1,0 +1,7 @@
+Jerarquia de H
+Agregue mas texto al title
+Agregue title en videos y mapa
+Modifique los alt
+agregue el open graph en todos los html
+agregue etiqueta meta description en todos los html
+agregue etiqueta meta keywords en todos los html

@@ -1,5 +1,6 @@
 @import '../base/variables';
 @import '../base/breakpoints';
+@import '../base/mixin';
 
 /*Selector universal*/
 * {
@@ -102,9 +103,8 @@ input {
 /* textos generales */
 
 .seccion-p {
-    font-size: 2rem;
+    @include textos(2rem, 150, black);
     font-family: $font-primaria;
-    font-weight: 150;
     line-height: 2;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -115,17 +115,13 @@ input {
 
 .seccion-h2 {
     font-family: $font-primaria;
-    font-size: 3rem;
-    font-weight: 700;
-    color: $color-dark;
+    @include textos(3rem, 700, $color-dark);
     padding-bottom: 2rem;
 }
 
 .seccion-h4 {
     font-family: $font-primaria;
-    font-size: 3rem;
-    font-weight: 700;
-    color: $color-dark;
+    @include textos(3rem, 700, $color-dark);
     margin-bottom: 10px;
 }
 

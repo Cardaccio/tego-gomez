@@ -1,0 +1,7 @@
+/*mixin*/
+
+@mixin textos($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}

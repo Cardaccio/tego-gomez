@@ -1,4 +1,5 @@
 /* breakpoints responsive */
+/*mixin*/
 /*Selector universal*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
 * {
@@ -102,8 +103,9 @@ input {
 /* textos generales */
 .seccion-p {
   font-size: 2rem;
-  font-family: "Poppins", sans-serif;
   font-weight: 150;
+  color: black;
+  font-family: "Poppins", sans-serif;
   line-height: 2;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -134,7 +136,24 @@ h3 {
   font-weight: 600;
 }
 
+/* breakpoints responsive */
+/* Mapas*/
+/*extends*/
+header nav .container-fluid div .login-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*mixin*/
 /* header */
+/*extends*/
+header nav .container-fluid div .login-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
   width: 100%;
   background-color: white;
@@ -178,9 +197,6 @@ header nav .container-fluid div .nav-ul a:hover {
 header nav .container-fluid div .login-cont {
   width: 20rem;
   margin: 1rem 1rem 1rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 header nav .container-fluid div .login-cont .login {
   font-family: "Poppins", sans-serif;
@@ -572,6 +588,7 @@ header nav .container-fluid div .login-cont .login:hover {
 
 /* footer */
 /* breakpoints responsive */
+/* Mapas*/
 footer {
   background-color: #264653;
   color: white;
@@ -733,7 +750,5 @@ footer .sociales .redes {
   font-weight: lighter;
   text-align: center;
 }
-
-/* breakpoints responsive */
 
 /*# sourceMappingURL=style.css.map */

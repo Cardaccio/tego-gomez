@@ -1,6 +1,7 @@
 /* footer */
 @import '../base/variables';
 @import '../base/breakpoints';
+@import '../base/mapas';
 
 footer {
     background-color: $color-dark;
@@ -100,10 +101,10 @@ footer {
         margin-top: 1rem;
         padding: 1rem 2rem;
         text-align: center;
-        display: flex;
+        display: map-get($d-flex-center, display);
         flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
+        align-items: map-get($d-flex-center, a-vert);
+        justify-content: map-get($d-flex-center, a-hor);
 
         a:hover {
             color: #122127;
@@ -116,10 +117,10 @@ footer {
     }
 
     .sociales {
-        display: flex;
+        display: map-get($d-flex-center, display );
         flex-flow: column nowrap;
-        align-items: center;
-        justify-content: center;
+        align-items: map-get($d-flex-center, a-vert);
+        justify-content: map-get($d-flex-center,a-hor );
         margin-top: 1rem;
         margin-right: 1rem;
         @include mobile{
