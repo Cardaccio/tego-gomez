@@ -1,7 +1,8 @@
 /* footer */
 @import '../base/variables';
 @import '../base/breakpoints';
-@import '../base/mapas';
+@import '../base/extends';
+@import '../base/mixin';
 
 footer {
     background-color: $color-dark;
@@ -22,9 +23,9 @@ footer {
 
     @include mobile {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
         margin: auto;
     }
 
@@ -39,9 +40,7 @@ footer {
     .news-footer {
         margin: 1rem 0 1rem 0.5rem;
         padding: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
 
         @include mobile {
             margin: auto;
@@ -101,10 +100,9 @@ footer {
         margin-top: 1rem;
         padding: 1rem 2rem;
         text-align: center;
-        display: map-get($d-flex-center, display);
+        @extend %flex;
         flex-flow: column wrap;
-        align-items: map-get($d-flex-center, a-vert);
-        justify-content: map-get($d-flex-center, a-hor);
+
 
         a:hover {
             color: #122127;
@@ -117,10 +115,8 @@ footer {
     }
 
     .sociales {
-        display: map-get($d-flex-center, display );
+        @extend %flex;
         flex-flow: column nowrap;
-        align-items: map-get($d-flex-center, a-vert);
-        justify-content: map-get($d-flex-center,a-hor );
         margin-top: 1rem;
         margin-right: 1rem;
         @include mobile{
@@ -134,9 +130,7 @@ footer {
             margin: 0 0.5rem;
             color: #fff;
             font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @extend %flex;
             border: 0;
             border-radius: 50%;
             box-shadow: 0.5rem 0.5rem 2rem #122127, -0.5rem -0.5rem 2rem #44778b;
@@ -167,9 +161,7 @@ footer {
 .copy {
     background-color: black;
     width: 100%;
-    color: $color-grey;
+    @include textos (1.5rem, lighter, $color-grey);
     font-family: $font-primaria;
-    font-size: 1.5rem;
-    font-weight: lighter;
     text-align: center;
 }

@@ -84,6 +84,15 @@ input {
     border-radius: 20rem;
     width: 60rem;
     height: 4rem;
+    margin-top: 4rem;
+    @include tablet{
+        width: 42rem;
+        margin-top: 0;
+    }
+    @include mobile{
+        width: 20rem;
+        margin-top: 0;
+    }
 }
 
 .lupa {
@@ -98,18 +107,54 @@ input {
     height: auto;
     outline: none;
     padding-left: 1rem;
+    @include tablet{
+        width: 80%;
+    }
+    @include mobile{
+        width: 70%;
+    }
 }
 
 /* textos generales */
 
 .seccion-p {
-    @include textos(2rem, 150, black);
+    @include textos(2rem, 150, white);
     font-family: $font-primaria;
     line-height: 2;
     margin-top: 10px;
     margin-bottom: 10px;
     & span{
         font-weight: bold;
+    }
+    &--dark{
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.top-h2 {
+    font-family: $font-primaria;
+    @include textos(6rem, 700, white);
+    text-align: center;
+    margin-bottom: 1rem;
+    &--blue{
+        color: $color-dark;
+    }
+}
+
+.top-p {
+    @include textos(2rem, 150, black);
+    font-family: $font-primaria;
+    text-align: center;
+    line-height: 2;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 60%;
+    &--white{
+        color: white;
     }
 }
 
@@ -130,4 +175,24 @@ h3{
     font-size: 2.5rem;
     font-weight: 600;
 
+}
+
+h6 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    grid-column-start: span 2;
+}
+
+.texto-izq {
+    width: 60%;
+    padding: 3rem 5rem;
+    min-width: 350px;
+}
+
+.texto-der {
+    width: 60%;
+    padding: 3rem 5rem;
+    float: right;
+    min-width: 350px;
 }

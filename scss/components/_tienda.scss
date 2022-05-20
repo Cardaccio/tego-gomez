@@ -1,0 +1,126 @@
+@import '../base/estilos-generales';
+@import '../base/variables';
+@import '../base/breakpoints';
+@import '../base/mixin';
+
+.main-color{
+    background-color: #dcf0ed;
+    .tienda{
+        display: flex;
+        justify-content: center;
+        .productos-tienda{
+            display: grid;
+            grid-template-columns: repeat(3, 30rem);
+            grid-auto-rows: 35rem;
+            gap: 6rem;
+            justify-content: space-around;
+            z-index: 1;
+            margin-bottom: 6rem;
+            transition: all ease 0.3s;
+            @include mobile{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1, 70%);
+                grid-auto-rows: 50rem;
+                gap: 3rem;
+                margin-bottom: 3rem;
+            }
+            @include tablet{
+                display: grid;
+                grid-template-columns: repeat(2, 25rem);
+                grid-auto-rows: 28rem;
+                gap: 3rem;
+                margin: 0 1rem 5rem 1rem;
+            }
+        }
+        .cont-producto{
+            background-color: white;
+            border: 0;
+            border-radius: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.568);
+            -webkit-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.568);
+            -moz-box-shadow: 11px 10px 16px -7px rgba(0, 0, 0, 0.568);
+            .fav-icon{
+                width: 2.5rem;
+                height: auto;
+                position: absolute;
+                margin: 3rem;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.2);
+                    z-index: 2;
+                }
+            }
+            .img-prod{
+                width: 70%;
+                height: 70%;
+                object-fit: cover;
+                padding-top: 2rem;
+                @include mobile{
+                    padding-bottom: 1rem;
+                    width: 100%;
+                    height: auto;
+                }
+                @include tablet{
+                    padding-bottom: 1rem;
+
+                }
+            }
+            .descripcion{
+                font-family: $font-primaria;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 30%;
+                margin: 1rem;
+                padding: 3rem 2rem 0.5rem 2rem;
+                position: absolute;
+                bottom: 0;
+                @include mobile{
+                    padding-top: 1rem;
+                }
+                @include tablet{
+                    padding: 1rem;
+                }
+                .detalle{
+                    color: rgb(102, 102, 102);
+                    grid-column-start: span 2;
+                    font-size: 1.2rem;
+                    @include mobile{
+                        font-size: 2rem;
+                    }
+                }
+                .precio{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    grid-column-start: span 2;
+                    @include mobile{
+                        font-size: 2rem;
+                    }
+                }
+                .cart-icon{
+                    width: 40%;
+                    height: auto;
+                    padding-bottom: 2rem;
+                    grid-row-start: span 3;
+                    justify-self: right;
+                    align-self: top;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.2);
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+}

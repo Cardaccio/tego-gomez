@@ -1,0 +1,197 @@
+@import '../base/estilos-generales';
+@import '../base/variables';
+@import '../base/breakpoints';
+@import '../base/mixin';
+
+.seccion-verde {
+    width: 100%;
+    height: auto;
+    background-color: $color-primario;
+    background-size: cover;
+    color: white;
+    line-height: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    @include tablet{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        align-content: center;
+        justify-content: center;
+    }
+    
+
+
+    .texto-izq {
+        @include tablet {
+            width: 100%;
+            padding: 3rem 3rem;
+        }
+        @include mobile{
+            width: 100%;
+            padding: auto;
+        }
+        h2 {
+            color: white;
+        }
+
+        .cont-button {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @include mobile{
+                flex-direction: column;
+            }
+            #verde {
+                @include mobile{
+                    margin-bottom: 2rem;
+                }
+                &:hover {
+                    background-color: $color-secundario;
+                }
+            }
+        }
+    }
+
+    .ima-verde {
+        width: 35%;
+        height: auto;
+        @include laptop{
+            width: 451px;
+            justify-self: center;
+        }
+        @include tablet{
+            width: fit-content;
+            justify-self: center;
+        }
+        @include mobile{
+            width: fit-content;
+            justify-self: center;
+        }
+    }
+
+}
+
+.slide-categorias {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background-color: white;
+    transition: all ease 0.5s;
+    overflow: hidden;
+
+    & span {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+    }
+
+    .categorias {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        & a {
+            text-decoration: none;
+        }
+
+        .cont-cat {
+            min-block-size: 300px;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 5rem;
+            padding: 2rem;
+            margin: 1rem 4rem;
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+
+            &--carbon {
+                background-color: $color-dark;
+            }
+
+            &--green {
+                background-color: $color-primario;
+            }
+
+            &--crayola {
+                background-color: $color-secundario;
+            }
+
+            .img-cat {
+                width: 35rem;
+                height: auto;
+                transition: all ease 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.3);
+                    filter: drop-shadow(10px 8px 0.75rem rgba(27, 27, 27, 0.616));
+                }
+            }
+        }
+    }
+}
+.seccion-naranja{
+    background-color: $color-secundario;
+    width: 100%;
+    background-size: cover;
+    height: auto;
+    color: white;
+    padding-right: 2px;
+    margin-bottom: 0;
+    word-break: break-all;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    .video{
+        width: 40%;
+        min-height: 600px;
+        height: auto;
+        @include mobile{
+            width: 100%;
+            min-height: 40vh;
+        }
+        @include tablet{
+            width: 100%;
+        }
+    }
+    .texto-der{
+        @include tablet{
+            width: 100%;
+        }
+    }
+}
+.lista-reviews{
+    width: 100%;
+    text-align: center;
+    padding-top: 10rem;
+    background-color: white;
+    margin-bottom: 0;
+    overflow: hidden;
+    
+    .cont-img-review{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+
+        .review{
+            margin: 5rem;
+            max-width: 40%;
+            @include mobile{
+                max-width: 60%;
+            }
+        }
+    }
+}
+    

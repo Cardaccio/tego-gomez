@@ -1,0 +1,41 @@
+@import '../base/estilos-generales';
+@import '../base/variables';
+@import '../base/breakpoints';
+@import '../base/mixin';
+
+.seccion-normal{
+    padding: 5rem 0;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .map{
+        width: 600px;
+        height: 450px;
+    }
+    div{
+        width: 40%;
+        @include tablet{
+            width: 100%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        div{
+            width: 100%;
+        }
+        select{
+            margin-bottom: 2rem;
+            width: 100%;
+            font-size: 2rem;
+            border: 0;
+            padding: 0.5rem 0;
+
+        }
+        .top-p{
+            max-width: 100%;
+        }
+    }
+}

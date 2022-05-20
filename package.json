@@ -1,7 +1,7 @@
 {
   "name": "tego",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">Hi 👋, I'm Juan Pablo Gomez</h1> <h3 align=\"center\">A passionate frontend developer and designer from Argentina</h3>",
+  "description": "Web Tego de articulos para mascotas",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
